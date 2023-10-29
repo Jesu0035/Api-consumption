@@ -1,0 +1,87 @@
+:root {
+  --theme-color: rgb(39, 41, 83);
+}
+html {
+  font-family: sans-serif;
+}
+section {
+  margin-block: 1rem;
+}
+header h1 {
+  color: white;
+  background-color: var(--theme-color);
+  padding: 1rem;
+}
+/* .town-search {
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  border-color: var(--theme-color);
+} */
+.town-search input[type="button"] {
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  background-color: var(--theme-color);
+}
+.town-search div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.town-search div input {
+  height: 1rem;
+  margin-block: auto;
+}
+.town-search input[type="button"]:hover {
+  animation: 0.5s pulse;
+  cursor: pointer;
+}
+.group-border {
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  border-color: var(--theme-color);
+}
+.town-info {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.town-info img {
+  border-radius: 1rem;
+}
+.town-events {
+  padding: 0rem;
+}
+.town-events table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.town-events table tr {
+  border-color: var(--theme-color);
+}
+.town-events table tr:nth-child(even) {
+  background-color: rgb(176, 188, 221);
+}
+.town-events table tr td {
+  padding: 0.5rem;
+}
+.event-text p {
+  margin: 0px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
